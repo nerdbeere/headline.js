@@ -16,10 +16,10 @@
         plugin.init = function() {
             plugin.settings = $.extend({}, defaults, options);
 
-            lines = $element.children('.' + plugin.settings.lineClass);
+            lines = $('.' + plugin.settings.lineClass, $element);
             inputContainer = $(plugin.settings.inputContainer);
 
-            for(var i = 0; i < lines.length; ++i) {
+            for(var i = 0; i < lines.length; i++) {
                 var $input = $(plugin.settings.inputMarkup);
                     $input.addClass('headlineInput_' + i);
 
