@@ -1,0 +1,15 @@
+.headlineContainer {
+	width: 400px;
+	border-left: 4px solid #777777;
+}
+
+.headlineContainer h2:first-child {
+	color: #f50f43;
+	font-weight: bold;
+	margin-bottom: 6px;
+}
+
+.headlineContainer h2 span {
+	cursor: pointer;
+	top: 0px !important;
+}
