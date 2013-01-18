@@ -9,7 +9,11 @@
 	margin-bottom: 6px;
 }
 
-.headlineContainer h2 span {
+.editable .headlineContainer h2 span {
 	cursor: pointer;
 	top: 0px !important;
+}
+
+.headlineContainer h2.line {
+	margin: 0px;
 }
