@@ -1,4 +1,3 @@
-headlinetest
+headline.js
 ============
 
-HeadlineTest
