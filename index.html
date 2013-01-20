@@ -12,6 +12,26 @@
     <script src="headline.js"></script>
     <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
     <script src="http://twitter.github.com/bootstrap/assets/js/google-code-prettify/prettify.js"></script>
+    <script>
+        var myHeadline;
+        $().ready(function() {
+            var $headline = $('.myHeadline');
+            var $headline2 = $('.myHeadline2');
+
+            myHeadline = $.headline($headline, {
+                editable: true,
+                lines: [
+                    { text: 'Welcome!', offset: 0 },
+                    { text: 'This is headline.js', offset: 30 }
+                ]
+            });
+
+            myHeadline2 = $.headline($headline2, {
+                lines: myHeadline.getData()
+            });
+            prettyPrint();
+        });
+    </script>
 </head>
 <body>
 <div class="container">

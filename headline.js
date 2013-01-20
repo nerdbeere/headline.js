@@ -168,22 +168,3 @@
     }
 
 })(jQuery);
-
-var myHeadline;
-$().ready(function() {
-    var $headline = $('.myHeadline');
-    var $headline2 = $('.myHeadline2');
-
-    myHeadline = $.headline($headline, {
-		editable: true,
-		lines: [
-			{ text: 'Welcome!', offset: 0 },
-			{ text: 'This is headline.js', offset: 30 }
-		]
-	});
-
-	myHeadline2 = $.headline($headline2, {
-		lines: myHeadline.getData()
-	});
-	prettyPrint();
-});
