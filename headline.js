@@ -139,6 +139,7 @@
 		}
 
         function getOffset($line) {
+        	// get the css attribute, remove "px" and cas to Number
             return Number($line.css('left').split('px')[0]) || 0;
         }
 
@@ -163,6 +164,15 @@
                 }
 
                 return linesArr;
+            },
+            enableEditing: function() {
+            	plugin.settings.editable = true;
+            	initEditMode();
+            },
+            disableEditing: function() {
+            	plugin.settings.editable = false;
+            	$element.removeClass('editable');
+            	$('.' + plugin.settings.inputContainer, $element).remove();
             }
         }
     }
